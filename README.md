@@ -18,19 +18,21 @@ Hacault Robin
 - Lancer PhpMyAdmin : http://localhost/phpmyadmin et aller à l'onglet "SQL"
 - Exécuter la requête ci-dessous
 ``` sql
-CREATE DATABASE idmdatabase;
-USE idmdatabase;
-CREATE TABLE `users` (
-  `id` int NOT NULL,
-  `first_name` varchar(255) DEFAULT NULL,
-  `last_name` varchar(255) DEFAULT NULL,
-  `age` int NOT NULL DEFAULT 1,
-  PRIMARY KEY (`id`)
-);
-INSERT INTO `users` VALUES (0, 'Dupont', 'Toto', 18);
-INSERT INTO `users` VALUES (1, 'Dupond', 'Tutu', 15);
-INSERT INTO `users` VALUES (2, 'Durand', 'Tita', 35);
-INSERT INTO `users` VALUES (3, 'Quentin', 'Jacques', 57);
+  CREATE DATABASE idmdatabase;
+  USE idmdatabase;
+  CREATE TABLE `users` (
+    `id` int NOT NULL,
+    `first_name` varchar(255) DEFAULT NULL,
+    `last_name` varchar(255) DEFAULT NULL,
+    `age` int NOT NULL DEFAULT 1,
+    PRIMARY KEY (`id`)
+  );
+  INSERT INTO `users` VALUES (0, 'Dupont', 'Toto', 18);
+  INSERT INTO `users` VALUES (1, 'Dupond', 'Tutu', 15);
+  INSERT INTO `users` VALUES (2, 'Durand', 'Tita', 35);
+  INSERT INTO `users` VALUES (3, 'Quentin', 'Jacques', 57);
+  INSERT INTO `users` VALUES (4, 'Hacault', 'Robin', 21);
 ```
-Cette requête permet de créer une nouvelle base avec une table "users" remplie avec 10 tuples.
+   Cette requête permet de créer une nouvelle base avec une table "users" remplie avec 5 tuples.
+
 
