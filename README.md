@@ -34,5 +34,19 @@ Hacault Robin
   - jooq-meta-3.4.4.jar
 - Et ajouter le .jar de Java MySQL connector
   - mysql-connector-java-5.1.33-bin.jar
+- Ouvrir dans eclipse le fichier src/users.xml puis modifier
+    - L'url de la database si le port que vous avez spécifié n'est pas 3307
+    - Le login et mot de passe si besoin
+    - L'inputschema si différent de "idmdatabase"
+    - Le nom du package de destination pour le code généré, et le chemin correspondant
+- Générer le code avec Jooq (à répéter à chaque modification de users.xml)
+    - Clic-droit sur le projet --> Run as --> Run configurations
+    - Créer une nouvelle configuration et sélectionner la classe main org.jooq.util.GenerationTool
+    - Dans l'onglet arguments, mettre l'url de users.xml : /users.xml
+    - Cliquer sur "Run", des fichiers utiles à Jooq vont être générés dans le package spécifié dans users.xml
 
+Maintenant le paramétrage terminé, on va s'intéresser à l'utilisation de Jooq en tant que DSL interne de SQL.
+
+###Utilisation###
+La classe Queries contient 3 exemples de requêtes SQL vers la table users de idmdatabase, que nous avons configuré précédemment.
 
