@@ -1,4 +1,4 @@
-Dépôt de l'exercice "SQL" d'IDM
+#JOOQ - DSL interne pour Java du langage SQL#
 
 ###Auteur###
 Hacault Robin
