@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration xmlns="http://www.jooq.org/xsd/jooq-codegen-3.4.4.xsd">
+
+	<jdbc>
+		<driver>com.mysql.jdbc.Driver</driver>
+		<url>jdbc:mysql://localhost:3307/idmdatabase</url>
+		<user>root</user>
+		<password></password>
+	</jdbc>
+	
+	
+	<generator>
+		<name>org.jooq.util.DefaultGenerator</name>
+		
+		<database>
+			<!-- Database type -->
+			<name>org.jooq.util.mysql.MySQLDatabase</name>
+			<!-- Database schema (name) -->
+			<inputSchema>idmdatabase</inputSchema>
+			<excludes></excludes>
+		</database>
+				
+		<target>
+			<!-- The destination package of the generated classes-->
+			<packageName>generated</packageName>
+			<!-- The destination directory of your generated classes -->
+			<directory>/home/robin/workspace/IDM-TP1/src</directory>
+		</target>
+		
+	</generator>
+	
+	
+</configuration>
