@@ -50,3 +50,13 @@ Maintenant le paramétrage terminé, on va s'intéresser à l'utilisation de Joo
 ###Utilisation###
 La classe Queries contient 3 exemples de requêtes SQL vers la table users de idmdatabase, que nous avons configuré précédemment.
 
+Il peut également être nécessaire de modifier dans ce fichier les variables contenant les informations de connexion à la base de données.
+
+Dans le point d'entrée du programme, on se connecte à la base de données, et après les différentes vérifications, on lance 4 requêtes dont 3 différentes :
+    - Sélection de tous les utilisateurs de la table users et affichage de tous les champs correspondants
+    - Sélection des utilisateurs d'age compris entre 20 et 50
+    - Incrémentation de l'age des utilisateurs dont le nom de famille commence par "D"
+    - Sélection de tous les utilisateurs de la table users et affichage de tous les champs correspondants
+    
+Ainsi, ces exemples nous montrent que le DSL interne Jooq se montre très puissant pour l'exécution de requêtes SQL. Il nous permet de les effectuer en manipulant des objets et méthodes Java.
+
